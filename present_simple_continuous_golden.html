@@ -1,0 +1,1788 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Present Simple & Present Continuous - شرح شامل 🎓</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 25%, #7474bf 50%, #348ac7 75%, #00d2ff 100%);
+            background-size: 400% 400%;
+            animation: gradientFlow 20s ease infinite;
+            min-height: 100vh;
+            padding: 30px;
+            line-height: 2;
+        }
+        
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .ticket-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 10%, #ffffff 20%, #ffffff 80%, #ffed4e 90%, #ffd700 100%);
+            border-radius: 40px;
+            padding: 8px;
+            box-shadow: 0 40px 120px rgba(0,0,0,0.6),
+                        0 0 80px rgba(255, 215, 0, 0.4),
+                        inset 0 0 60px rgba(255, 215, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .ticket-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, 
+                transparent 40%, 
+                rgba(255, 255, 255, 0.3) 50%, 
+                transparent 60%);
+            animation: shine 6s infinite;
+        }
+        
+        @keyframes shine {
+            0%, 100% { transform: rotate(0deg) translate(0, 0); }
+            50% { transform: rotate(180deg) translate(50px, 50px); }
+        }
+        
+        .ticket-inner {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            border-radius: 35px;
+            padding: 60px;
+            position: relative;
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.3);
+        }
+        
+        .golden-header {
+            text-align: center;
+            margin-bottom: 60px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+            padding: 80px 50px;
+            border-radius: 30px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(255, 215, 0, 0.5),
+                        inset 0 -5px 20px rgba(0,0,0,0.2);
+            border: 5px solid #fff;
+        }
+        
+        .golden-header::before {
+            content: '🏆';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.15;
+            top: -30px;
+            left: 50px;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .golden-header::after {
+            content: '⭐';
+            position: absolute;
+            font-size: 150px;
+            opacity: 0.15;
+            bottom: -20px;
+            right: 50px;
+            animation: float 4s ease-in-out infinite 2s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+        
+        .golden-header h1 {
+            font-size: 4.5em;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+            font-weight: 900;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .golden-header .subtitle {
+            font-size: 2em;
+            color: #2a5298;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+            border-radius: 30px;
+            padding: 50px;
+            margin: 50px 0;
+            border: 6px solid #ffd700;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3),
+                        0 0 40px rgba(255,215,0,0.3);
+            position: relative;
+        }
+        
+        .section-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+            border-radius: 30px 30px 0 0;
+        }
+        
+        .section-title {
+            font-size: 3.2em;
+            color: #1e3c72;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+            border: 4px solid #fff;
+        }
+        
+        .content-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            border-right: 8px solid #2a5298;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .content-title {
+            font-size: 2.2em;
+            color: #1e3c72;
+            margin-bottom: 25px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .text-large {
+            font-size: 1.6em;
+            color: #2d3436;
+            line-height: 2.3;
+            text-align: justify;
+        }
+        
+        .text-large strong {
+            color: #d63031;
+            font-size: 1.15em;
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+            padding: 3px 10px;
+            border-radius: 6px;
+        }
+        
+        .formula-golden {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #1e3c72;
+            padding: 35px;
+            border-radius: 20px;
+            font-size: 2em;
+            font-weight: 800;
+            margin: 35px 0;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(255,215,0,0.5);
+            border: 5px solid #fff;
+        }
+        
+        .formula-label {
+            font-size: 0.7em;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .example-box {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            padding: 30px;
+            border-radius: 18px;
+            margin: 25px 0;
+            border-right: 8px solid #4caf50;
+            box-shadow: 0 8px 25px rgba(76,175,80,0.2);
+        }
+        
+        .example-en {
+            font-size: 1.8em;
+            color: #1b5e20;
+            margin-bottom: 15px;
+            font-weight: 800;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .example-ar {
+            font-size: 1.6em;
+            color: #2e7d32;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .example-explain {
+            font-size: 1.4em;
+            color: #558b2f;
+            padding: 15px;
+            background: rgba(255,255,255,0.7);
+            border-radius: 10px;
+            font-style: italic;
+            margin-top: 12px;
+        }
+        
+        .tricks-golden {
+            background: linear-gradient(135deg, #fff9e6 0%, #ffe8b3 100%);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 35px 0;
+            border: 5px solid #ffd700;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.3);
+        }
+        
+        .tricks-title {
+            font-size: 2.5em;
+            color: #f57c00;
+            margin-bottom: 30px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .trick-item {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #2d3436;
+            border-right: 8px solid #e67e22;
+            line-height: 2.3;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .keyword-golden {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #1e3c72;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 800;
+            margin: 0 8px;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(255,215,0,0.5);
+            border: 2px solid #fff;
+        }
+        
+        .table-golden {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        }
+        
+        .table-golden thead {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+        }
+        
+        .table-golden th {
+            padding: 35px;
+            font-size: 1.8em;
+            font-weight: 900;
+            color: #1e3c72;
+            text-align: center;
+            border: 3px solid #fff;
+        }
+        
+        .table-golden td {
+            padding: 28px;
+            font-size: 1.5em;
+            border: 2px solid #e9ecef;
+            text-align: center;
+            font-weight: 700;
+            color: #2d3436;
+        }
+        
+        .table-golden tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .table-golden tr:hover {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            transform: scale(1.02);
+        }
+        
+        .mind-map-golden {
+            background: linear-gradient(135deg, #fff 0%, #f5f5f5 100%);
+            padding: 60px;
+            border-radius: 30px;
+            margin: 60px 0;
+            border: 8px solid #ffd700;
+            box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+        }
+        
+        .mind-map-title {
+            text-align: center;
+            font-size: 3.5em;
+            color: #1e3c72;
+            margin-bottom: 50px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+        }
+        
+        .mind-map-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 35px;
+        }
+        
+        .mind-branch {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+            border-top: 10px solid;
+        }
+        
+        .mind-branch.simple { border-color: #FF6B6B; }
+        .mind-branch.continuous { border-color: #4ECDC4; }
+        
+        .mind-branch h4 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            color: #1e3c72;
+            font-weight: 900;
+        }
+        
+        .mind-branch ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .mind-branch li {
+            font-size: 1.4em;
+            margin: 15px 0;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-right: 6px solid;
+            line-height: 2;
+        }
+        
+        .mind-branch.simple li { border-color: #FF6B6B; }
+        .mind-branch.continuous li { border-color: #4ECDC4; }
+        
+        .quiz-golden {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 80px;
+            border-radius: 40px;
+            margin: 80px 0;
+            border: 10px solid #fff;
+            box-shadow: 0 30px 80px rgba(255,215,0,0.6);
+        }
+        
+        .quiz-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .quiz-title {
+            font-size: 4.5em;
+            color: #1e3c72;
+            margin-bottom: 30px;
+            font-weight: 900;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+        }
+        
+        .quiz-subtitle {
+            font-size: 2em;
+            color: #2a5298;
+            font-weight: 800;
+        }
+        
+        .quiz-question {
+            background: white;
+            padding: 45px;
+            border-radius: 28px;
+            margin: 40px 0;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+            border: 6px solid #2a5298;
+            transition: all 0.4s ease;
+        }
+        
+        .quiz-question:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+        }
+        
+        .question-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            font-size: 1.8em;
+            font-weight: 900;
+            margin-bottom: 28px;
+            box-shadow: 0 10px 25px rgba(30,60,114,0.4);
+        }
+        
+        .question-text {
+            font-size: 1.9em;
+            color: #2d3436;
+            margin: 28px 0;
+            font-weight: 800;
+            line-height: 2.3;
+        }
+        
+        .options {
+            display: grid;
+            gap: 22px;
+            margin-top: 35px;
+        }
+        
+        .option {
+            background: #f8f9fa;
+            padding: 28px 35px;
+            border-radius: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 5px solid transparent;
+            font-size: 1.6em;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+        
+        .option:hover {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-color: #4CAF50;
+            transform: translateX(-12px);
+        }
+        
+        .option-label {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 55px;
+            height: 55px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border-radius: 50%;
+            font-weight: 900;
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .answers-golden {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 70px;
+            border-radius: 35px;
+            margin-top: 80px;
+            border: 10px solid #ffd700;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+        }
+        
+        .answers-title {
+            font-size: 4em;
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 900;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+        }
+        
+        .answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 28px;
+        }
+        
+        .answer-item {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(255,215,0,0.4);
+            border: 4px solid #fff;
+            transition: all 0.3s ease;
+        }
+        
+        .answer-item:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 18px 50px rgba(255,215,0,0.6);
+        }
+        
+        .answer-item .q-num {
+            font-size: 1.6em;
+            color: #1e3c72;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+        
+        .answer-item .answer {
+            font-size: 2.5em;
+            color: #27ae60;
+            font-weight: 900;
+        }
+        
+        .footer-golden {
+            text-align: center;
+            margin-top: 90px;
+            padding: 70px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            border-radius: 35px;
+            box-shadow: 0 25px 70px rgba(255,215,0,0.5);
+            border: 8px solid #fff;
+        }
+        
+        .footer-golden h2 {
+            font-size: 4em;
+            color: #1e3c72;
+            margin-bottom: 30px;
+            font-weight: 900;
+        }
+        
+        .footer-golden p {
+            font-size: 2em;
+            color: #2a5298;
+            margin: 25px 0;
+            font-weight: 700;
+        }
+        
+        .divider-golden {
+            height: 6px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+            margin: 50px 0;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .ticket-inner {
+                padding: 30px;
+            }
+            
+            .golden-header h1 {
+                font-size: 2.5em;
+            }
+            
+            .mind-map-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="ticket-inner">
+            <!-- Golden Header -->
+            <div class="golden-header">
+                <h1>🎓 Present Simple & Present Continuous 🎓</h1>
+                <div class="subtitle">الدليل الذهبي الشامل من كتاب الكلية</div>
+                <div class="subtitle" style="font-size: 1.5em; margin-top: 15px;">
+                    Dr. Rania Wagih - Cairo University
+                </div>
+            </div>
+
+            <!-- Section 1: Present Continuous -->
+            <div class="section-card">
+                <div class="section-title">⚡ المضارع المستمر - Present Continuous ⚡</div>
+                
+                <div class="content-box">
+                    <div class="content-title">📚 إيه هو Present Continuous؟</div>
+                    <div class="text-large">
+                        <strong>Present Continuous</strong> (المضارع المستمر) هو زمن بنستخدمه عشان نتكلم عن حاجة <strong>بتحصل دلوقتي</strong> أو <strong>مستمرة في اللحظة دي</strong>!
+                        <br><br>
+                        يعني لو أنت <strong>بتذاكر دلوقتي</strong> → تقول: <strong>I am studying now</strong>
+                        <br>
+                        لو هي <strong>بتطبخ دلوقتي</strong> → تقول: <strong>She is cooking now</strong>
+                    </div>
+                </div>
+                
+                <div class="formula-golden">
+                    <div class="formula-label">📐 التكوين - Formation</div>
+                    <div>Subject + am/is/are + Verb + ing</div>
+                    <div style="font-size: 0.75em; margin-top: 15px;">الفاعل + am/is/are + الفعل + ing</div>
+                </div>
+                
+                <div class="content-box">
+                    <div class="content-title">🎯 قاعدة am/is/are المهمة جداً!</div>
+                    <div class="text-large">
+                        <strong>🔴 انتبه جداً!</strong> لازم تعرف مين يستخدم إيه:
+                        <br><br>
+                        • <span class="keyword-golden">I</span> → <strong>am</strong><br>
+                        مثال: I <strong>am</strong> working (أنا بشتغل)<br><br>
+                        
+                        • <span class="keyword-golden">He/She/It</span> → <strong>is</strong><br>
+                        مثال: He <strong>is</strong> working (هو بيشتغل)<br>
+                        مثال: She <strong>is</strong> working (هي بتشتغل)<br><br>
+                        
+                        • <span class="keyword-golden">You/We/They</span> → <strong>are</strong><br>
+                        مثال: They <strong>are</strong> working (هم بيشتغلوا)<br>
+                        مثال: We <strong>are</strong> working (احنا بنشتغل)
+                    </div>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">💡 تريكات إضافة ing للفعل</div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 القاعدة العادية:</strong> نضيف <strong>ing</strong> مباشرة<br>
+                        ✅ work → work<strong>ing</strong><br>
+                        ✅ play → play<strong>ing</strong><br>
+                        ✅ do → do<strong>ing</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بـ e:</strong> نحذف الـ e ونضيف <strong>ing</strong><br>
+                        ✅ write → writ<strong>ing</strong> (مش writeing)<br>
+                        ✅ make → mak<strong>ing</strong> (مش makeing)<br>
+                        ✅ drive → driv<strong>ing</strong><br>
+                        ✅ believe → believ<strong>ing</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بـ ie:</strong> نحول الـ ie إلى <strong>y</strong> ونضيف <strong>ing</strong><br>
+                        ✅ die → dy<strong>ing</strong> (مش dieing)<br>
+                        ✅ lie → ly<strong>ing</strong><br>
+                        ✅ tie → ty<strong>ing</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل مقطع واحد وينتهي بـ (حرف ساكن + حرف متحرك + حرف ساكن):</strong><br>
+                        نضاعف الحرف الأخير ونضيف <strong>ing</strong><br>
+                        ✅ run → run<strong>ning</strong> (مش runing)<br>
+                        ✅ sit → sit<strong>ting</strong><br>
+                        ✅ swim → swim<strong>ming</strong><br>
+                        ✅ stop → stop<strong>ping</strong><br>
+                        ✅ jog → jog<strong>ging</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بحرف y:</strong> نضيف <strong>ing</strong> عادي<br>
+                        ✅ play → play<strong>ing</strong><br>
+                        ✅ say → say<strong>ing</strong><br>
+                        ✅ enjoy → enjoy<strong>ing</strong><br>
+                        ✅ buy → buy<strong>ing</strong>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-title">🎯 متى نستخدم Present Continuous؟</div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الأول: حدث يحصل الآن (في اللحظة دي)
+                        </div>
+                        
+                        <div class="example-en">I'm just leaving work. I'll be home in an hour.</div>
+                        <div class="example-ar">الترجمة: أنا لسه خارج من الشغل. هوصل البيت في ساعة.</div>
+                        <div class="example-explain">💬 بيحصل دلوقتي - الكلمات المفتاحية: now, right now, at the moment, Look!, Listen!</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">Please be quiet. The children are sleeping.</div>
+                        <div class="example-ar">الترجمة: من فضلك كن هادئاً. الأطفال نايمين.</div>
+                        <div class="example-explain">💬 بيحصل دلوقتي في هذه اللحظة</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الثاني: حدث مؤقت (مش دائم)
+                        </div>
+                        
+                        <div class="example-en">Michael is at university. He's studying history.</div>
+                        <div class="example-ar">الترجمة: مايكل في الجامعة. هو بيدرس تاريخ.</div>
+                        <div class="example-explain">💬 حالة مؤقتة - هو طالب دلوقتي لكن مش هيفضل كده للأبد</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">I'm working in London for the next two weeks.</div>
+                        <div class="example-ar">الترجمة: أنا بشتغل في لندن للأسبوعين الجايين.</div>
+                        <div class="example-explain">💬 شغل مؤقت لفترة محددة</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الثالث: تغيير أو تطور مستمر
+                        </div>
+                        
+                        <div class="example-en">The children are growing quickly.</div>
+                        <div class="example-ar">الترجمة: الأطفال بيكبروا بسرعة.</div>
+                        <div class="example-explain">💬 تطور مستمر</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">The climate is changing rapidly.</div>
+                        <div class="example-ar">الترجمة: المناخ بيتغير بسرعة.</div>
+                        <div class="example-explain">💬 تغيير مستمر - أفعال التغيير: get, change, become, increase, rise, fall, grow, improve, begin, start</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">Your English is improving.</div>
+                        <div class="example-ar">الترجمة: إنجليزيتك بتتحسن.</div>
+                        <div class="example-explain">💬 تحسن مستمر</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الرابع: حاجة بتحصل كتير (مع always للتضايق)
+                        </div>
+                        
+                        <div class="example-en">It's always raining in London.</div>
+                        <div class="example-ar">الترجمة: دايماً بتمطر في لندن (تضايق من كثرة المطر).</div>
+                        <div class="example-explain">💬 دايماً نستخدم always في الحالة دي للتعبير عن التضايق</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">They are always arguing.</div>
+                        <div class="example-ar">الترجمة: هم دايماً بيتخانقوا (تضايق من كثرة المشاكل).</div>
+                        <div class="example-explain">💬 شيء يتكرر كثيراً بشكل مزعج</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الخامس: خطة في المستقبل القريب
+                        </div>
+                        
+                        <div class="example-en">Mary is going to a new school next term.</div>
+                        <div class="example-ar">الترجمة: ماري رايحة مدرسة جديدة الترم الجاي.</div>
+                        <div class="example-explain">💬 خطة مؤكدة في المستقبل القريب</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">What are you doing next week?</div>
+                        <div class="example-ar">الترجمة: إيه خططك الأسبوع الجاي؟</div>
+                        <div class="example-explain">💬 سؤال عن خطط مستقبلية</div>
+                    </div>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">🔴 الكلمات المفتاحية لـ Present Continuous</div>
+                    <div class="trick-item">
+                        <span class="keyword-golden">now</span>
+                        <span class="keyword-golden">right now</span>
+                        <span class="keyword-golden">at the moment</span>
+                        <span class="keyword-golden">currently</span>
+                        <span class="keyword-golden">Look!</span>
+                        <span class="keyword-golden">Listen!</span>
+                        <span class="keyword-golden">today</span>
+                        <span class="keyword-golden">this week</span>
+                        <span class="keyword-golden">this year</span>
+                        <span class="keyword-golden">these days</span>
+                        <span class="keyword-golden">nowadays</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Present Simple -->
+            <div class="section-card">
+                <div class="section-title">☀️ المضارع البسيط - Present Simple ☀️</div>
+                
+                <div class="content-box">
+                    <div class="content-title">📚 إيه هو Present Simple؟</div>
+                    <div class="text-large">
+                        <strong>Present Simple</strong> (المضارع البسيط) هو زمن بنستخدمه للحاجات <strong>الثابتة</strong> أو <strong>العادات اليومية</strong> أو <strong>الحقائق العامة</strong>!
+                        <br><br>
+                        يعني الحاجات اللي <strong>بتتكرر</strong> أو <strong>مش بتتغير</strong>!
+                    </div>
+                </div>
+                
+                <div class="formula-golden">
+                    <div class="formula-label">📐 التكوين - Formation</div>
+                    <div>Subject + Base Verb (+ s/es مع he/she/it)</div>
+                    <div style="font-size: 0.75em; margin-top: 15px;">الفاعل + الفعل الأصلي (نضيف s أو es مع المفرد الغائب)</div>
+                </div>
+                
+                <div class="content-box">
+                    <div class="content-title">🎯 قاعدة إضافة s/es للفعل</div>
+                    <div class="text-large">
+                        <strong>🔴 مهم جداً!</strong> نضيف <strong>s</strong> أو <strong>es</strong> للفعل فقط مع:
+                        <br><br>
+                        <span class="keyword-golden">He/She/It</span> (المفرد الغائب)
+                        <br><br>
+                        <strong>أمثلة:</strong><br>
+                        ✅ I work (أنا أشتغل)<br>
+                        ✅ He work<strong>s</strong> (هو يشتغل) ← أضفنا s<br>
+                        ✅ She go<strong>es</strong> (هي تذهب) ← أضفنا es<br>
+                        ✅ It rain<strong>s</strong> (إنها تمطر) ← أضفنا s
+                    </div>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">💡 تريكات إضافة s/es في المضارع البسيط</div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 القاعدة العادية:</strong> نضيف <strong>s</strong> فقط<br>
+                        ✅ work → work<strong>s</strong><br>
+                        ✅ play → play<strong>s</strong><br>
+                        ✅ drink → drink<strong>s</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بـ (o, ch, sh, ss, x, z):</strong> نضيف <strong>es</strong><br>
+                        ✅ go → go<strong>es</strong> (مش gos)<br>
+                        ✅ catch → catch<strong>es</strong><br>
+                        ✅ wash → wash<strong>es</strong><br>
+                        ✅ pass → pass<strong>es</strong><br>
+                        ✅ fix → fix<strong>es</strong><br>
+                        ✅ buzz → buzz<strong>es</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بـ (حرف ساكن + y):</strong> نحول y إلى <strong>ies</strong><br>
+                        ✅ study → stud<strong>ies</strong> (مش studys)<br>
+                        ✅ fly → fl<strong>ies</strong><br>
+                        ✅ cry → cr<strong>ies</strong><br>
+                        ✅ try → tr<strong>ies</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 لو الفعل ينتهي بـ (حرف متحرك + y):</strong> نضيف <strong>s</strong> عادي<br>
+                        ✅ play → play<strong>s</strong><br>
+                        ✅ say → say<strong>s</strong><br>
+                        ✅ enjoy → enjoy<strong>s</strong>
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 أفعال شاذة:</strong><br>
+                        ✅ have → ha<strong>s</strong> (مش haves)<br>
+                        ✅ do → do<strong>es</strong> (مش dos)
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-title">🎯 متى نستخدم Present Simple؟</div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الأول: حقائق عامة وثابتة
+                        </div>
+                        
+                        <div class="example-en">The sun rises in the east.</div>
+                        <div class="example-ar">الترجمة: الشمس تشرق من الشرق.</div>
+                        <div class="example-explain">💬 حقيقة علمية ثابتة</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">Water boils at 100 degrees celsius.</div>
+                        <div class="example-ar">الترجمة: الماء يغلي عند 100 درجة مئوية.</div>
+                        <div class="example-explain">💬 حقيقة علمية</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">The sky isn't green.</div>
+                        <div class="example-ar">الترجمة: السماء ليست خضراء.</div>
+                        <div class="example-explain">💬 حقيقة عامة</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الثاني: حالات دائمة أو شبه دائمة
+                        </div>
+                        
+                        <div class="example-en">Where do you live?</div>
+                        <div class="example-ar">الترجمة: فين أنت ساكن؟</div>
+                        <div class="example-explain">💬 مكان السكن (شبه دائم)</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">She works in a bank.</div>
+                        <div class="example-ar">الترجمة: هي تشتغل في بنك.</div>
+                        <div class="example-explain">💬 وظيفة ثابتة</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">I don't like mushrooms.</div>
+                        <div class="example-ar">الترجمة: أنا مش بحب المشروم.</div>
+                        <div class="example-explain">💬 تفضيل ثابت</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الثالث: عادات متكررة
+                        </div>
+                        
+                        <div class="example-en">I play tennis every Tuesday.</div>
+                        <div class="example-ar">الترجمة: أنا ألعب تنس كل يوم ثلاثاء.</div>
+                        <div class="example-explain">💬 عادة أسبوعية - every Tuesday</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">She gets up at seven o'clock every day.</div>
+                        <div class="example-ar">الترجمة: هي تستيقظ الساعة سبعة كل يوم.</div>
+                        <div class="example-explain">💬 روتين يومي - every day</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">We often go to the cinema.</div>
+                        <div class="example-ar">الترجمة: نحن غالباً نروح السينما.</div>
+                        <div class="example-explain">💬 عادة متكررة - often</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الرابع: المستقبل مع when/until/after/before/as soon as
+                        </div>
+                        
+                        <div class="example-en">I will call you when I have time.</div>
+                        <div class="example-ar">الترجمة: أنا هتصل بيك لما يكون عندي وقت.</div>
+                        <div class="example-explain">💬 مستقبل لكن نستخدم Present Simple بعد when</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">I won't go out until it stops raining.</div>
+                        <div class="example-ar">الترجمة: أنا مش هخرج لحد ما المطر يوقف.</div>
+                        <div class="example-explain">💬 Present Simple بعد until في جملة مستقبلية</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ الاستخدام الخامس: مع Stative Verbs (الأفعال الثابتة)
+                        </div>
+                        
+                        <div class="example-en">This soup tastes great.</div>
+                        <div class="example-ar">الترجمة: الشوربة دي طعمها رائع.</div>
+                        <div class="example-explain">💬 taste فعل ثابت - مش بنقول is tasting</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">I think she is very pretty.</div>
+                        <div class="example-ar">الترجمة: أنا أعتقد إنها جميلة جداً.</div>
+                        <div class="example-explain">💬 think (بمعنى رأي) فعل ثابت</div>
+                    </div>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">🔴 الكلمات المفتاحية لـ Present Simple</div>
+                    <div class="trick-item">
+                        <strong>أفعل التكرار (Adverbs of Frequency):</strong><br>
+                        <span class="keyword-golden">always</span> (100%)
+                        <span class="keyword-golden">usually</span> (90%)
+                        <span class="keyword-golden">frequently</span> (80%)
+                        <span class="keyword-golden">often</span> (70%)
+                        <span class="keyword-golden">sometimes</span> (50%)
+                        <span class="keyword-golden">occasionally</span> (30%)
+                        <span class="keyword-golden">seldom</span> (10%)
+                        <span class="keyword-golden">rarely</span> (5%)
+                        <span class="keyword-golden">never</span> (0%)
+                    </div>
+                    <div class="trick-item">
+                        <strong>كلمات أخرى:</strong><br>
+                        <span class="keyword-golden">every day/week/month/year</span>
+                        <span class="keyword-golden">once a week</span>
+                        <span class="keyword-golden">twice a month</span>
+                        <span class="keyword-golden">on Mondays</span>
+                        <span class="keyword-golden">in general</span>
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-title">❓ السؤال والنفي في Present Simple</div>
+                    <div class="text-large">
+                        <strong>نستخدم do/does في السؤال والنفي:</strong>
+                        <br><br>
+                        <strong>🔵 مع I/You/We/They:</strong> نستخدم <strong>do</strong><br>
+                        <strong>🔵 مع He/She/It:</strong> نستخدم <strong>does</strong>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <table class="table-golden">
+                            <thead>
+                                <tr>
+                                    <th>النوع</th>
+                                    <th>التكوين</th>
+                                    <th>مثال</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>السؤال<br>Question</td>
+                                    <td>Do/Does + Subject + Base Verb?</td>
+                                    <td>Do you work?<br>Does she work?</td>
+                                </tr>
+                                <tr>
+                                    <td>النفي<br>Negative</td>
+                                    <td>Subject + don't/doesn't + Base Verb</td>
+                                    <td>I don't work<br>She doesn't work</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="example-box" style="margin-top: 30px;">
+                        <div class="example-en">✅ Where do you come from?</div>
+                        <div class="example-ar">الترجمة: أنت منين؟</div>
+                        <div class="example-explain">💬 سؤال - do مع you</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">✅ I don't go away very often.</div>
+                        <div class="example-ar">الترجمة: أنا مش بسافر كتير.</div>
+                        <div class="example-explain">💬 نفي - don't مع I</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">✅ Does she like coffee?</div>
+                        <div class="example-ar">الترجمة: هي بتحب القهوة؟</div>
+                        <div class="example-explain">💬 سؤال - does مع she + الفعل الأصلي like (مش likes)</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">✅ He doesn't smoke.</div>
+                        <div class="example-ar">الترجمة: هو مش بيدخن.</div>
+                        <div class="example-explain">💬 نفي - doesn't مع he + الفعل الأصلي smoke (مش smokes)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Stative Verbs -->
+            <div class="section-card">
+                <div class="section-title">🚫 الأفعال الثابتة - Stative Verbs 🚫</div>
+                
+                <div class="content-box">
+                    <div class="content-title">📚 إيه هي Stative Verbs؟</div>
+                    <div class="text-large">
+                        <strong>Stative Verbs</strong> (الأفعال الثابتة) هي أفعال <strong>ممنوع نستخدمها مع Continuous</strong>!
+                        <br><br>
+                        <strong>🔴 مهم جداً!</strong> الأفعال دي بتعبر عن <strong>حالات وليس أفعال</strong>، زي المشاعر والحواس والملكية والتفكير.
+                        <br><br>
+                        <strong>يعني:</strong><br>
+                        ❌ I am knowing (غلط!)<br>
+                        ✅ I know (صح!)
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <table class="table-golden">
+                        <thead>
+                            <tr>
+                                <th>النوع</th>
+                                <th>الأفعال</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);">
+                                    <strong>الملكية والقياس</strong><br>
+                                    Possession & measurements
+                                </td>
+                                <td>have, belong, consist, contain, cost, depend, fit, include, involve, measure, owe, own, possess, weigh</td>
+                            </tr>
+                            <tr>
+                                <td style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);">
+                                    <strong>الأفكار والآراء</strong><br>
+                                    Thoughts & opinions
+                                </td>
+                                <td>agree, believe, concern, disagree, doubt, forget, imagine, know, mean, promise, realise, recognise, remember, suppose, suspect, think, understand</td>
+                            </tr>
+                            <tr>
+                                <td style="background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);">
+                                    <strong>الحواس والإدراك</strong><br>
+                                    Senses & perceptions
+                                </td>
+                                <td>be, appear, feel, hear, look, see, seem, smell, sound, taste</td>
+                            </tr>
+                            <tr>
+                                <td style="background: linear-gradient(135deg, #fff9c4 0%, #fff59d 100%);">
+                                    <strong>التفضيلات والمشاعر</strong><br>
+                                    Preferences & feelings
+                                </td>
+                                <td>appreciate, care, deserve, desire, dislike, enjoy, hate, hope, like, love, mind, need, prefer, want, wish</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">⚠️ استثناءات مهمة جداً!</div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 الفعل Think له معنيان:</strong><br><br>
+                        
+                        <strong>1️⃣ بمعنى "أعتقد/رأي"</strong> → نستخدم <strong>Present Simple</strong><br>
+                        ✅ I <strong>think</strong> Mary is Canadian. (أنا أعتقد ماري كندية)<br>
+                        ❌ I am thinking Mary is Canadian. (غلط!)<br><br>
+                        
+                        <strong>2️⃣ بمعنى "أفكر في/أدرس"</strong> → ممكن نستخدم <strong>Present Continuous</strong><br>
+                        ✅ I'<strong>m thinking</strong> about what happened. (أنا بفكر في اللي حصل)<br>
+                        ✅ Nicky <strong>is thinking</strong> of giving up her job. (نيكي بتفكر تسيب شغلها)
+                    </div>
+                    
+                    <div class="trick-item">
+                        <strong>🔵 الفعل Look/Feel:</strong><br><br>
+                        
+                        ممكن نستخدم <strong>Present Simple</strong> أو <strong>Present Continuous</strong> للتعبير عن المظهر والشعور:<br><br>
+                        
+                        ✅ You <strong>look</strong> well today. (أنت شكلك كويس النهاردة)<br>
+                        ✅ You'<strong>re looking</strong> well today. (نفس المعنى)<br><br>
+                        
+                        ✅ How <strong>do</strong> you <strong>feel</strong> now? (إنت حاسس إزاي دلوقتي؟)<br>
+                        ✅ How <strong>are</strong> you <strong>feeling</strong> now? (نفس المعنى)<br><br>
+                        
+                        <strong>لكن!</strong> مع العادات نستخدم Present Simple فقط:<br>
+                        ✅ I usually <strong>feel</strong> tired in the morning. (أنا عادةً بحس بالتعب الصبح)<br>
+                        ❌ I'm usually feeling tired. (غلط!)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Always doing -->
+            <div class="section-card">
+                <div class="section-title">😤 الفرق بين "I always do" و "I'm always doing" 😤</div>
+                
+                <div class="content-box">
+                    <div class="content-title">🎯 متى نستخدم كل واحدة؟</div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #1b5e20; font-weight: 800; margin-bottom: 20px;">
+                            ✅ I always do (something)
+                        </div>
+                        <div class="text-large" style="margin-bottom: 20px;">
+                            <strong>المعنى:</strong> أنا دائماً أفعل هذا (في كل مرة - شيء طبيعي)
+                        </div>
+                        
+                        <div class="example-en">I always go to work by car.</div>
+                        <div class="example-ar">الترجمة: أنا دائماً أروح الشغل بالعربية.</div>
+                        <div class="example-explain">💬 عادة طبيعية - مافيش تضايق</div>
+                    </div>
+                    
+                    <div class="example-box">
+                        <div style="font-size: 1.8em; color: #e74c3c; font-weight: 800; margin-bottom: 20px;">
+                            ⚠️ I'm always doing (something)
+                        </div>
+                        <div class="text-large" style="margin-bottom: 20px;">
+                            <strong>المعنى:</strong> أنا دائماً أفعل هذا (أكثر من الطبيعي - تضايق/انزعاج!)
+                        </div>
+                        
+                        <div class="example-en">I've lost my key again. I'm always losing things.</div>
+                        <div class="example-ar">الترجمة: ضيعت مفتاحي تاني. أنا دايماً بضيع حاجات (تضايق من نفسي!).</div>
+                        <div class="example-explain">💬 يحصل أكثر من اللازم - فيه تضايق وانزعاج!</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">They are always telling me what to do.</div>
+                        <div class="example-ar">الترجمة: هم دايماً بيقولولي أعمل إيه (تضايق منهم!).</div>
+                        <div class="example-explain">💬 شيء يتكرر كثيراً ويسبب الإزعاج</div>
+                        
+                        <div class="divider-golden"></div>
+                        
+                        <div class="example-en">You're always watching television. You should do something more active.</div>
+                        <div class="example-ar">الترجمة: أنت دايماً قاعد قدام التلفزيون. لازم تعمل حاجة أنشط.</div>
+                        <div class="example-explain">💬 انتقاد وتضايق من الفعل المتكرر</div>
+                    </div>
+                </div>
+
+                <div class="tricks-golden">
+                    <div class="tricks-title">🔑 الخلاصة المهمة</div>
+                    <div class="trick-item">
+                        <strong>Present Simple + always</strong> = عادة عادية طبيعية<br>
+                        <strong>Present Continuous + always</strong> = شيء يحصل كثير ويضايق! 😤
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mind Map -->
+            <div class="mind-map-golden">
+                <div class="mind-map-title">🧠 الخريطة الذهنية الشاملة 🧠</div>
+                <p style="text-align: center; font-size: 1.6em; color: #2d3436; margin-bottom: 40px; font-weight: 700;">
+                    ملخص سريع للفرق بين Present Simple و Present Continuous
+                </p>
+                
+                <div class="mind-map-grid">
+                    <div class="mind-branch simple">
+                        <h4>☀️ Present Simple</h4>
+                        <ul>
+                            <li><strong>التكوين:</strong> Subject + Verb (+ s/es)</li>
+                            <li><strong>الاستخدام:</strong> حقائق، عادات، حالات دائمة</li>
+                            <li><strong>الكلمات المفتاحية:</strong> always, usually, often, every day</li>
+                            <li><strong>مثال:</strong> I work every day</li>
+                            <li><strong>السؤال:</strong> Do/Does + Subject + Verb?</li>
+                            <li><strong>النفي:</strong> don't/doesn't + Verb</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mind-branch continuous">
+                        <h4>⚡ Present Continuous</h4>
+                        <ul>
+                            <li><strong>التكوين:</strong> Subject + am/is/are + Verb+ing</li>
+                            <li><strong>الاستخدام:</strong> دلوقتي، مؤقت، تغيير مستمر</li>
+                            <li><strong>الكلمات المفتاحية:</strong> now, right now, at the moment, Look!</li>
+                            <li><strong>مثال:</strong> I am working now</li>
+                            <li><strong>السؤال:</strong> Am/Is/Are + Subject + Verb+ing?</li>
+                            <li><strong>النفي:</strong> am not/isn't/aren't + Verb+ing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 50px;">
+                    <table class="table-golden">
+                        <thead>
+                            <tr>
+                                <th>الموقف</th>
+                                <th>Present Simple</th>
+                                <th>Present Continuous</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>عادة يومية</strong></td>
+                                <td>✅ I drink coffee every morning</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td><strong>حدث الآن</strong></td>
+                                <td>❌</td>
+                                <td>✅ I am drinking coffee now</td>
+                            </tr>
+                            <tr>
+                                <td><strong>حقيقة عامة</strong></td>
+                                <td>✅ Water boils at 100°C</td>
+                                <td>❌</td>
+                            </tr>
+                            <tr>
+                                <td><strong>حالة مؤقتة</strong></td>
+                                <td>❌</td>
+                                <td>✅ I'm working in Cairo this month</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stative Verbs</strong></td>
+                                <td>✅ I know the answer</td>
+                                <td>❌ I'm knowing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>خطة في المستقبل</strong></td>
+                                <td>❌</td>
+                                <td>✅ I'm meeting him tomorrow</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Quiz Section -->
+            <div class="quiz-golden">
+                <div class="quiz-header">
+                    <div class="quiz-title">🎮 اختبر نفسك الآن! 🎮</div>
+                    <div class="quiz-subtitle">30 سؤال اختيار من متعدد</div>
+                    <p style="text-align: center; font-size: 1.5em; margin-top: 20px; color: #2d3436; font-weight: 700;">
+                        اختر الإجابة الصحيحة!
+                    </p>
+                </div>
+
+                <!-- Questions 1-30 -->
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 1</span>
+                    <div class="question-text">She ______ to school every day.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> go</div>
+                        <div class="option"><span class="option-label">B</span> goes</div>
+                        <div class="option"><span class="option-label">C</span> is going</div>
+                        <div class="option"><span class="option-label">D</span> going</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 2</span>
+                    <div class="question-text">Look! The children ______ in the garden.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> play</div>
+                        <div class="option"><span class="option-label">B</span> plays</div>
+                        <div class="option"><span class="option-label">C</span> are playing</div>
+                        <div class="option"><span class="option-label">D</span> is playing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 3</span>
+                    <div class="question-text">I ______ this book. It's very interesting.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> like</div>
+                        <div class="option"><span class="option-label">B</span> am liking</div>
+                        <div class="option"><span class="option-label">C</span> likes</div>
+                        <div class="option"><span class="option-label">D</span> liking</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 4</span>
+                    <div class="question-text">Water ______ at 100 degrees Celsius.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> boil</div>
+                        <div class="option"><span class="option-label">B</span> boils</div>
+                        <div class="option"><span class="option-label">C</span> is boiling</div>
+                        <div class="option"><span class="option-label">D</span> are boiling</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 5</span>
+                    <div class="question-text">Please be quiet. I ______ to concentrate.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> try</div>
+                        <div class="option"><span class="option-label">B</span> tries</div>
+                        <div class="option"><span class="option-label">C</span> am trying</div>
+                        <div class="option"><span class="option-label">D</span> trying</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 6</span>
+                    <div class="question-text">He usually ______ coffee in the morning.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> drink</div>
+                        <div class="option"><span class="option-label">B</span> drinks</div>
+                        <div class="option"><span class="option-label">C</span> is drinking</div>
+                        <div class="option"><span class="option-label">D</span> are drinking</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 7</span>
+                    <div class="question-text">The sun ______ in the east.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> rise</div>
+                        <div class="option"><span class="option-label">B</span> rises</div>
+                        <div class="option"><span class="option-label">C</span> is rising</div>
+                        <div class="option"><span class="option-label">D</span> rising</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 8</span>
+                    <div class="question-text">I ______ what you mean.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> understand</div>
+                        <div class="option"><span class="option-label">B</span> am understanding</div>
+                        <div class="option"><span class="option-label">C</span> understands</div>
+                        <div class="option"><span class="option-label">D</span> understanding</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 9</span>
+                    <div class="question-text">She ______ her homework right now.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> do</div>
+                        <div class="option"><span class="option-label">B</span> does</div>
+                        <div class="option"><span class="option-label">C</span> is doing</div>
+                        <div class="option"><span class="option-label">D</span> doing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 10</span>
+                    <div class="question-text">They ______ tennis every weekend.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> play</div>
+                        <div class="option"><span class="option-label">B</span> plays</div>
+                        <div class="option"><span class="option-label">C</span> are playing</div>
+                        <div class="option"><span class="option-label">D</span> is playing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 11</span>
+                    <div class="question-text">The water ______. Can you turn it off?</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> boil</div>
+                        <div class="option"><span class="option-label">B</span> boils</div>
+                        <div class="option"><span class="option-label">C</span> is boiling</div>
+                        <div class="option"><span class="option-label">D</span> are boiling</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 12</span>
+                    <div class="question-text">I ______ to the radio every morning.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> listen</div>
+                        <div class="option"><span class="option-label">B</span> listens</div>
+                        <div class="option"><span class="option-label">C</span> am listening</div>
+                        <div class="option"><span class="option-label">D</span> listening</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 13</span>
+                    <div class="question-text">______ you ______ to the radio now?</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> Do / listen</div>
+                        <div class="option"><span class="option-label">B</span> Are / listening</div>
+                        <div class="option"><span class="option-label">C</span> Does / listen</div>
+                        <div class="option"><span class="option-label">D</span> Is / listening</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 14</span>
+                    <div class="question-text">The River Nile ______ into the Mediterranean.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> flow</div>
+                        <div class="option"><span class="option-label">B</span> flows</div>
+                        <div class="option"><span class="option-label">C</span> is flowing</div>
+                        <div class="option"><span class="option-label">D</span> are flowing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 15</span>
+                    <div class="question-text">Look at the river. It ______ very fast today.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> flow</div>
+                        <div class="option"><span class="option-label">B</span> flows</div>
+                        <div class="option"><span class="option-label">C</span> is flowing</div>
+                        <div class="option"><span class="option-label">D</span> are flowing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 16</span>
+                    <div class="question-text">We usually ______ vegetables in our garden.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> grow</div>
+                        <div class="option"><span class="option-label">B</span> grows</div>
+                        <div class="option"><span class="option-label">C</span> are growing</div>
+                        <div class="option"><span class="option-label">D</span> is growing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 17</span>
+                    <div class="question-text">This year we ______ any vegetables.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> don't grow</div>
+                        <div class="option"><span class="option-label">B</span> doesn't grow</div>
+                        <div class="option"><span class="option-label">C</span> aren't growing</div>
+                        <div class="option"><span class="option-label">D</span> isn't growing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 18</span>
+                    <div class="question-text">My English ______ slowly.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> improve</div>
+                        <div class="option"><span class="option-label">B</span> improves</div>
+                        <div class="option"><span class="option-label">C</span> is improving</div>
+                        <div class="option"><span class="option-label">D</span> are improving</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 19</span>
+                    <div class="question-text">I've lost my key again. I ______ my things.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> always lose</div>
+                        <div class="option"><span class="option-label">B</span> am always losing</div>
+                        <div class="option"><span class="option-label">C</span> always losing</div>
+                        <div class="option"><span class="option-label">D</span> loses</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 20</span>
+                    <div class="question-text">Can we stop walking soon? I ______ to feel tired.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> start</div>
+                        <div class="option"><span class="option-label">B</span> starts</div>
+                        <div class="option"><span class="option-label">C</span> am starting</div>
+                        <div class="option"><span class="option-label">D</span> are starting</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 21</span>
+                    <div class="question-text">'Can you drive?' 'I ______. My father ______ me.'</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> learn / teach</div>
+                        <div class="option"><span class="option-label">B</span> am learning / is teaching</div>
+                        <div class="option"><span class="option-label">C</span> learn / is teaching</div>
+                        <div class="option"><span class="option-label">D</span> am learning / teaches</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 22</span>
+                    <div class="question-text">Normally I ______ work at 5.00.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> finish</div>
+                        <div class="option"><span class="option-label">B</span> finishes</div>
+                        <div class="option"><span class="option-label">C</span> am finishing</div>
+                        <div class="option"><span class="option-label">D</span> are finishing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 23</span>
+                    <div class="question-text">But this week I ______ until 6.00.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> work</div>
+                        <div class="option"><span class="option-label">B</span> works</div>
+                        <div class="option"><span class="option-label">C</span> am working</div>
+                        <div class="option"><span class="option-label">D</span> are working</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 24</span>
+                    <div class="question-text">The train is never late. It ______ on time.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> always leave</div>
+                        <div class="option"><span class="option-label">B</span> always leaves</div>
+                        <div class="option"><span class="option-label">C</span> is always leaving</div>
+                        <div class="option"><span class="option-label">D</span> are always leaving</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 25</span>
+                    <div class="question-text">Sonia ______ for a place to live.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> look</div>
+                        <div class="option"><span class="option-label">B</span> looks</div>
+                        <div class="option"><span class="option-label">C</span> is looking</div>
+                        <div class="option"><span class="option-label">D</span> are looking</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 26</span>
+                    <div class="question-text">She ______ with her sister at the moment.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> stay</div>
+                        <div class="option"><span class="option-label">B</span> stays</div>
+                        <div class="option"><span class="option-label">C</span> is staying</div>
+                        <div class="option"><span class="option-label">D</span> are staying</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 27</span>
+                    <div class="question-text">'What ______ your father ______?' 'He's an architect.'</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> do / do</div>
+                        <div class="option"><span class="option-label">B</span> does / do</div>
+                        <div class="option"><span class="option-label">C</span> is / doing</div>
+                        <div class="option"><span class="option-label">D</span> are / doing</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 28</span>
+                    <div class="question-text">But he ______ at the moment.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> don't work</div>
+                        <div class="option"><span class="option-label">B</span> doesn't work</div>
+                        <div class="option"><span class="option-label">C</span> isn't working</div>
+                        <div class="option"><span class="option-label">D</span> aren't working</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 29</span>
+                    <div class="question-text">Usually I ______ parties.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> enjoy</div>
+                        <div class="option"><span class="option-label">B</span> enjoys</div>
+                        <div class="option"><span class="option-label">C</span> am enjoying</div>
+                        <div class="option"><span class="option-label">D</span> are enjoying</div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <span class="question-number">السؤال 30</span>
+                    <div class="question-text">But I ______ this one very much.</div>
+                    <div class="options">
+                        <div class="option"><span class="option-label">A</span> don't enjoy</div>
+                        <div class="option"><span class="option-label">B</span> doesn't enjoy</div>
+                        <div class="option"><span class="option-label">C</span> am not enjoying</div>
+                        <div class="option"><span class="option-label">D</span> aren't enjoying</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Answers Section -->
+            <div class="answers-golden">
+                <div class="answers-title">✅ إجابات الأسئلة ✅</div>
+                <p style="text-align: center; font-size: 1.7em; color: #ffd700; margin-bottom: 50px; font-weight: 800;">
+                    راجع إجاباتك وشوف كام جبت صح! 💯
+                </p>
+                <div class="answer-grid">
+                    <div class="answer-item">
+                        <div class="q-num">1</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">2</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">3</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">4</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">5</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">6</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">7</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">8</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">9</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">10</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">11</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">12</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">13</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">14</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">15</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">16</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">17</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">18</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">19</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">20</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">21</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">22</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">23</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">24</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">25</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">26</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">27</div>
+                        <div class="answer">B</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">28</div>
+                        <div class="answer">C</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">29</div>
+                        <div class="answer">A</div>
+                    </div>
+                    <div class="answer-item">
+                        <div class="q-num">30</div>
+                        <div class="answer">C</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-golden">
+                <h2>🎉 مبروك! أنت أنهيت الدرس! 🎉</h2>
+                <p>دلوقتي أنت فاهم Present Simple و Present Continuous زي الفل! 💪</p>
+                <p>Practice makes perfect! استمر في التدريب 📚</p>
+                <p style="margin-top: 35px; font-size: 1.7em;">
+                    💖 بالتوفيق في امتحاناتك! 💖
+                </p>
+                <p style="font-size: 1.4em; margin-top: 20px;">
+                    Dr. Rania Wagih - Cairo University ✨
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add interactivity
+        document.querySelectorAll('.option').forEach(option => {
+            option.addEventListener('click', function() {
+                const parent = this.closest('.quiz-question');
+                parent.querySelectorAll('.option').forEach(opt => {
+                    opt.style.background = '#f8f9fa';
+                    opt.style.borderColor = 'transparent';
+                });
+                
+                this.style.background = 'linear-gradient(135deg, #ffd700 0%, #ffed4e 100%)';
+                this.style.borderColor = '#1e3c72';
+            });
+        });
+    </script>
+</body>
+</html>
